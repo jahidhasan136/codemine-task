@@ -5,11 +5,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 const formOptions = [
-  { name: "Custom Inquiry", path: "/dashboard/forms/custom-inquiry" },
-  { name: "Credit Application", path: "/dashboard/forms/credit-application" },
+  { name: "Custom Inquiry", path: "/" },
+  { name: "Credit Application", path: "/" },
   {
     name: "Vehicle Appraisal Form",
-    path: "/dashboard/forms/vehicle-appraisal",
+    path: "/",
   },
 ];
 

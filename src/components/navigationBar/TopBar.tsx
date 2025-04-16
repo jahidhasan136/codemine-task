@@ -17,10 +17,9 @@ export default function TopBar({
 
   const pathname = usePathname();
   const isFormsRoute =
-    pathname === "/dashboard/forms" ||
-    "/dashboard/forms/vehicle-appraisal" ||
-    "/dashboard/forms/credit-application" ||
-    "/dashboard/forms/custom-inquiry";
+    pathname === "/"  ||
+    "/" ||
+    "/";
 
   return (
     <header className="shadow-lg bg-white">
