@@ -3,8 +3,7 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 import { ImagePlus, X } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { IoIosArrowBack } from "react-icons/io";
+// import { Input } from "@/components/ui/input";
 
 interface ImageFile extends File {
   preview?: string;
@@ -86,9 +85,9 @@ export default function AddSchoolPage() {
   };
 
   // Handle input changes
-  const handleInputChange = (field: keyof FormData, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }));
-  };
+  // const handleInputChange = (field: keyof FormData, value: string) => {
+  //   setFormData((prev) => ({ ...prev, [field]: value }));
+  // };
 
 
   // Reset the form data
@@ -104,7 +103,7 @@ export default function AddSchoolPage() {
 
   return (
     <div className="container py-8">
-      <div className="mb-4">
+      {/* <div className="mb-4">
         <a
           href="/dashboard/schools"
           className="text-sm font-semibold flex items-center"
@@ -112,16 +111,16 @@ export default function AddSchoolPage() {
           <IoIosArrowBack />
           Back to School List
         </a>
-      </div>
+      </div> */}
 
-      <h1 className="text-3xl font-semibold mb-8">Add School</h1>
+      <h1 className="text-3xl font-semibold mb-8">Image Functionality</h1>
 
       <form
         className="container max-w-4xl 2xl:max-w-7xl space-y-8"
       >
         {/* School Images Section */}
         <div>
-          <h2 className="text-base font-medium mb-4">School Image</h2>
+          <h2 className="text-base font-medium mb-4">Images</h2>
           <div className="mb-4">
             <div
               onClick={() => mainInputRef.current?.click()}
@@ -193,7 +192,7 @@ export default function AddSchoolPage() {
 
         {/* Logo Section */}
         <div>
-          <h2 className="text-base font-medium mb-4">School Logo</h2>
+          <h2 className="text-base font-medium mb-4">Logo</h2>
           <div className="mb-4">
             <div
               onClick={() => logoInputRef.current?.click()}
@@ -226,7 +225,7 @@ export default function AddSchoolPage() {
         </div>
 
         {/* Basic Information Section */}
-        <div>
+        {/* <div>
           <h2 className="text-lg font-medium mb-4">Basic Information</h2>
           <div className="space-y-4">
             <div className="space-y-2">
@@ -259,7 +258,7 @@ export default function AddSchoolPage() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Form Submit and Reset */}
         <div className="flex gap-4">
